@@ -102,7 +102,7 @@
 
             try {
                 // Nginx의 /api/{serviceName}/ 경로로 요청 (끝에 슬래시 중요)
-                const response = await fetch(`/api/${serviceName}/`);
+                const response = await fetch(`/${serviceName}/api/`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP Error: ${response.status}`);
